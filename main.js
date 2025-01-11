@@ -18,7 +18,7 @@ function GetTotal() {
     total.style.backgroundColor = 'green';
   } else {
     total.innerHTML = '';
-    total.style.backgroundColor = '#dc3545';
+    total.style.backgroundColor = 'red';
   }
 }
 
