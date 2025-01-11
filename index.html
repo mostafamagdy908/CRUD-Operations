@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+   initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==
+  " crossorigin="anonymous"
+   referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" id="lnkstyle">
+</head>
+
+<body id="alll">
+
+  <div class="crud">
+
+    <div class="head">
+      <h2>crud</h2>
+      <p>product managment system</p>
+        <section>
+          <a id="light" href="#" onclick="StyleSheet('style.css')"><i class="fa-regular fa-lightbulb"></i></a>
+          <a id="darck" href="#" onclick="StyleSheet('darck.css')"><i class="fa-solid fa-lightbulb"></i></a>
+        </section>
+    </div>
+
+
+
+
+    <div class="inbuts">
+
+      <input type="text" id="title" placeholder="title" required>
+
+      <div class="preis">
+        <input onkeyup="GetTotal()" type="number" id="price" placeholder="price" required>
+        <input onkeyup="GetTotal()" type="number" id="taxes" placeholder="taxes" required>
+        <input onkeyup="GetTotal()" type="number" id="ads" placeholder="ads" required>
+        <input onkeyup="GetTotal()" type="number" id="discount" placeholder="discound" required>
+        <small onkeyup="GetTotal()" id="total"></small>
+      </div>
+      <input type="number" name="" id="count" placeholder="count" required>
+      <input type="text" name="" id="category" placeholder="category" required>
+      <button id="cearte">create</button>
+    </div>
+
+
+
+    <div class="outbuts">
+      <div class="searchblock">
+        <input onkeyup="search(this.value)" type="text" placeholder="search" id="search" required>
+        <div class="btnsearch">
+          <button onclick="getsearch(this.id)"  id="searchtitle">search by title</button>
+          <button onclick="getsearch(this.id)" id="searchcategory">search by category</button>
+        </div>
+      </div>
+
+    </div>
+    <div id="deleteAll">
+
+    </div>
+    <table>
+      <tr id="lig">
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+      </tr>
+
+      <tbody id="tbody">
+        <!-- <tr>
+          <td>1</td>
+          <td>samsung</td>
+          <td>2000</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>2100</td>
+          <td><button id="updeat">updeat</button>
+            <td><button id="dele">delete</button>
+        </tr> -->
+
+      </tbody>
+    </table>
+  </div>
+
+ <script src="jquery-3.7.1.js"></script>
+  <script src="/main.js"></script>
+</body>
+
+</html>

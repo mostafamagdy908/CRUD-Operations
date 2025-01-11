@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#alll{
+  background-color: black;
+}
+.crud{
+  width: 80%;
+  margin: auto;
+}
+
+.head{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px 0;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.inbuts{
+  width: 100%;
+}
+.inbuts input,#search{
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  outline: none;
+  border-radius: 5px;
+  color:black;
+}
+
+.inbuts input:focus{
+  transform: scale(1.1);
+  background-color:blueviolet;
+}
+
+#search:focus{
+  transform: scale(1.1);
+  background-color:blueviolet;
+}
+
+.inbuts .preis input{
+  width: 20%;
+  padding: 10px 0;
+  color:black;
+}
+::placeholder{
+  padding-left: 5px;
+  color:black;
+}
+
+.btnsearch{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.btnsearch button{
+  width: 45%;
+}
+
+
+
+button{
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+#total{
+  background-color: brown;
+  padding: 0.7%;
+  border-radius: 4px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+#total::before{
+  content: "total: ";
+}
+
+table{
+  width: 100%;
+  margin-top: 15px;
+}
+table tr th{
+  font-size: 1.1em;
+  color: white;
+  background-color:rgb(20, 14, 14);
+}
+
+tbody tr td{
+  text-align: center;
+  color: white;
+  background-color: #272525;
+}
+
+#dele{
+  width:45%;
+  height: 45px;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  background-color: #dc3545;
+  border: none;
+}
+#dele:hover{
+  background-color: #941623;
+}
+#updeat{
+  width:40%;
+  height: 45px;
+  margin-bottom: 10%;
+  border-radius: 5px;
+  background-color:#0d6efd;
+  border: none;
+}
+
+#updeat:hover{
+  background-color: #0948a7;
+}
+
+
+#dele i{
+  font-size: 23px;
+  color: white;
+  text-align: center;
+}
+
+#updeat i{
+  font-size: 23px;
+  color:white;
+  margin: 10px 16px;
+
+}
+
+.head section{
+  display: flex;
+  justify-content: end;
+}
+
+a i{
+  font-size: 25px;
+  color:white;
+}
+
+/* .head section a#light{
+display: none;
+} */
+
+
+
